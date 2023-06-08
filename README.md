@@ -28,11 +28,11 @@ sudo mysql_secure_installation
 
 ### Step 3: Install PHP
 ```
-sudo apt-get install php5-fpm php5-mysql
+sudo apt install php-fpm php-mysql
 ```
 Let’s edit a file. These are PHP’s settings, and we’re going to make it more secure.
 ```
-sudo nano /etc/php5/fpm/php.ini
+sudo nano /etc/php//7.4/fpm/php.ini
 ```
 Find the line that says #cgi.fix_pathinfo=1 and change it to cgi.fix_pathinfo=0. You can find it with the search function (Ctrl+W). Then exit with Ctrl+X and save with Y.
 
